@@ -1,0 +1,72 @@
+---
+import { Cloud, Database, Shield, Settings, Headphones, FileText, RefreshCw, BarChart3 } from 'lucide-react';
+---
+<section id="services" class="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-black via-gray-900 to-primary-black relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;80&quot; height=&quot;80&quot; viewBox=&quot;0 0 80 80&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23F59E0B&quot; fill-opacity=&quot;0.1&quot;%3E%3Ccircle cx=&quot;40&quot; cy=&quot;40&quot; r=&quot;20&quot;/%3E%3C/g%3E%3C/svg%3E')" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto text-center px-4 max-w-7xl relative z-10">
+    <h2 class="font-serif font-bold text-3xl sm:text-4xl md:text-5xl mb-4 text-white">Nuestros Servicios</h2>
+    <p class="font-sans text-lg text-gray-300 mb-16 max-w-3xl mx-auto">Ofrecemos soluciones tecnológicas integrales para impulsar su transformación digital</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <RefreshCw client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Modernización de Aplicaciones</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Modernice sus aplicaciones existentes para agilizar los procesos, reducir los costos y mejorar la experiencia del usuario.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Cloud client:load className="w-8 h-8 text-primary-gold" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Migración a la nube</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Migramos sus aplicaciones, datos e infraestructura a la nube de forma segura y eficiente, minimizando el tiempo de inactividad.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-200">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <BarChart3 client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Analítica de Datos</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Obtenga información valiosa de sus datos para tomar decisiones más inteligentes y estratégicas.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-300">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Database client:load className="w-8 h-8 text-primary-gold" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Infraestructura como servicio</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Le proporcionamos la infraestructura de TI que necesita para ejecutar sus aplicaciones y servicios en la nube.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Shield client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Seguridad</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Proteja sus datos y aplicaciones con nuestras soluciones de seguridad de última generación.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Settings client:load className="w-8 h-8 text-primary-gold" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Servicios Gestionados</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Delegue la gestión de su infraestructura de TI a nuestros expertos para que pueda centrarse en su negocio.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-200">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <FileText client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Licenciamiento</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Le ayudamos a elegir las licencias de software adecuadas para sus necesidades y presupuesto.</p>
+      </div>
+      <div class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-silver/50 transform hover:-translate-y-2 animate-fade-in-up animation-delay-300">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Headphones client:load className="w-8 h-8 text-primary-gold" />
+        </div>
+        <h3 class="font-serif font-bold text-xl mb-3 text-primary-black group-hover:text-primary-silver transition-colors duration-300">Soporte Técnico</h3>
+        <p class="font-sans text-gray-600 text-sm leading-relaxed">Nuestro equipo de soporte técnico está disponible 24/7 para ayudarle con cualquier problema que pueda tener.</p>
+      </div>
+    </div>
+  </div>
+</section>

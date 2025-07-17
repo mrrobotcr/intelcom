@@ -1,0 +1,104 @@
+---
+import { TrendingUp, Shield, Clock, Award } from 'lucide-react';
+---
+<section id="testimonials" class="py-16 sm:py-20 bg-gradient-to-br from-slate-50 via-white to-gray-50 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23F59E0B&quot; fill-opacity=&quot;0.1&quot;%3E%3Cpath d=&quot;M30 0l8 16h16l-13 10 5 16-16-12-16 12 5-16L6 16h16z&quot;/%3E%3C/g%3E%3C/svg%3E')\" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 lg:px-8 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 bg-primary-gold/10 border border-primary-gold/30 rounded-full text-primary-gold text-sm font-semibold mb-6">
+        <TrendingUp client:load className="w-4 h-4 mr-2" />
+        Resultados Comprobados
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary-black mb-4">
+        Números Que <span class="bg-gradient-to-r from-primary-gold to-amber-500 bg-clip-text text-transparent">Hablan</span>
+      </h2>
+      <p class="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
+        Más de dos décadas transformando la infraestructura tecnológica de Costa Rica
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <!-- Stat 1 -->
+      <div class="group text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 animate-floating">
+          <TrendingUp client:load className="w-10 h-10 text-primary-black" />
+        </div>
+        <div class="text-4xl font-bold text-primary-black mb-2 animate-fade-in-up">500+</div>
+        <div class="font-sans text-gray-600 font-medium">Proyectos Exitosos</div>
+        <div class="font-sans text-sm text-gray-500 mt-2">Implementaciones Azure & Office 365</div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="group text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 animate-floating">
+          <Shield client:load className="w-10 h-10 text-primary-gold" />
+        </div>
+        <div class="text-4xl font-bold text-primary-black mb-2 animate-fade-in-up">99.9%</div>
+        <div class="font-sans text-gray-600 font-medium">Tiempo de Actividad</div>
+        <div class="font-sans text-sm text-gray-500 mt-2">Infraestructura confiable 24/7</div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="group text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 animate-floating">
+          <Clock client:load className="w-10 h-10 text-primary-black" />
+        </div>
+        <div class="text-4xl font-bold text-primary-black mb-2 animate-fade-in-up">24h</div>
+        <div class="font-sans text-gray-600 font-medium">Tiempo de Respuesta</div>
+        <div class="font-sans text-sm text-gray-500 mt-2">Soporte técnico garantizado</div>
+      </div>
+
+      <!-- Stat 4 -->
+      <div class="group text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 animate-floating">
+          <Award client:load className="w-10 h-10 text-primary-gold" />
+        </div>
+        <div class="text-4xl font-bold text-primary-black mb-2 animate-fade-in-up">20+</div>
+        <div class="font-sans text-gray-600 font-medium">Años de Experiencia</div>
+        <div class="font-sans text-sm text-gray-500 mt-2">Líderes en tecnología Microsoft</div>
+      </div>
+    </div>
+
+    <!-- Impact Statement -->
+    <div class="bg-gradient-to-r from-primary-black to-gray-900 rounded-3xl p-8 lg:p-12 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="font-serif text-2xl lg:text-3xl font-bold text-white mb-6">
+          Impacto Real en Empresas Costarricenses
+        </h3>
+        
+        <!-- Key Achievements -->
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-gold mb-2">40%</div>
+            <div class="font-sans text-gray-300 text-sm">Reducción promedio en costos de TI</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-gold mb-2">65%</div>
+            <div class="font-sans text-gray-300 text-sm">Mejora en productividad empresarial</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-gold mb-2">90%</div>
+            <div class="font-sans text-gray-300 text-sm">Clientes renuevan nuestros servicios</div>
+          </div>
+        </div>
+
+        <p class="font-sans text-lg text-gray-300 mb-8 italic">
+          "Transformamos la infraestructura tecnológica de empresas líderes en Costa Rica, 
+          desde instituciones gubernamentales hasta corporaciones privadas."
+        </p>
+        
+        <!-- Partner Badge -->
+        <div class="inline-flex items-center px-6 py-3 bg-primary-gold/20 border border-primary-gold/30 rounded-full">
+          <Award client:load className="w-5 h-5 text-primary-gold mr-3" />
+          <span class="font-sans text-primary-gold font-semibold">Microsoft Gold Partner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

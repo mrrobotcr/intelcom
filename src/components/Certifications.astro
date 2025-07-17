@@ -1,0 +1,212 @@
+---
+import { Award, CheckCircle, Shield, Star } from 'lucide-react';
+---
+<section id="certifications" class="py-16 sm:py-20 bg-gradient-to-br from-slate-50 via-gray-100 to-slate-100 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-20">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%2371717A&quot; fill-opacity=&quot;0.05&quot;%3E%3Cpolygon points=&quot;20,5 23,15 33,15 25,22 28,32 20,25 12,32 15,22 7,15 17,15&quot;/%3E%3C/g%3E%3C/svg%3E')" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto text-center px-4 relative z-10 max-w-6xl">
+    <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-silver/20 to-primary-gold/20 border border-primary-silver/40 rounded-full text-gray-800 text-sm font-bold mb-8 shadow-lg">
+      <Star client:load className="w-5 h-5 mr-2 text-primary-gold" />
+      Certificaciones Oficiales Microsoft
+    </div>
+    
+    <h2 class="font-serif font-bold text-3xl sm:text-4xl mb-3 text-gray-900">
+      <span class="bg-gradient-to-r from-primary-silver via-gray-700 to-primary-gold bg-clip-text text-transparent">Microsoft</span> Solutions Partner
+    </h2>
+    
+    <p class="font-sans text-lg text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+      Partner certificado en 7 especialidades tecnológicas de Microsoft
+    </p>
+
+    <!-- Carrusel horizontal de certificaciones -->
+    <div class="relative mb-12">
+      <div class="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 px-4" style="scroll-snap-type: x mandatory;">
+        <!-- Data & AI Azure -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Data-y-AI-Azure.png" 
+                alt="Microsoft Partner - Data & AI Azure" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Data & AI</h3>
+              <p class="text-gray-600 text-sm">Azure Solutions</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Infrastructure Azure -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Infra-and-database-Migration.png" 
+                alt="Microsoft Partner - Infrastructure Azure" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Infrastructure</h3>
+              <p class="text-gray-600 text-sm">Azure Migration</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Kubernetes on Azure -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Kubernetes-on-Azure.png" 
+                alt="Microsoft Partner - Kubernetes on Azure" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Kubernetes</h3>
+              <p class="text-gray-600 text-sm">on Azure</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Modern Work -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-green-50 to-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Modern-Work.png" 
+                alt="Microsoft Partner - Modern Work" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Modern Work</h3>
+              <p class="text-gray-600 text-sm">Productivity Solutions</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Seguridad-1.png" 
+                alt="Microsoft Partner - Security" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Security</h3>
+              <p class="text-gray-600 text-sm">Cybersecurity Solutions</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Windows Server -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Windows-Server.png" 
+                alt="Microsoft Partner - Windows Server" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Windows Server</h3>
+              <p class="text-gray-600 text-sm">Enterprise Infrastructure</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+
+        <!-- Kubernetes Enterprise Migration -->
+        <div class="group flex-shrink-0 w-72 bg-white border border-gray-200 hover:border-primary-gold/60 rounded-2xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:transform hover:scale-102" style="scroll-snap-align: start;">
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <img 
+                src="/images/certifications/Partner-Kuernetes-Migrate-emterprise.png" 
+                alt="Microsoft Partner - Kubernetes Enterprise Migration" 
+                class="w-12 h-12 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-lg text-gray-900 group-hover:text-primary-gold transition-colors duration-300">Kubernetes Enterprise</h3>
+              <p class="text-gray-600 text-sm">Container Migration</p>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 text-sm font-medium">
+            <CheckCircle client:load className="w-4 h-4 mr-2" />
+            <span>Certificado Oficial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credenciales compactas -->
+    <div class="bg-gradient-to-r from-white to-gray-50 border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+      <div class="flex items-center justify-center space-x-8 flex-wrap gap-4">
+        <div class="flex items-center space-x-2">
+          <Shield client:load className="w-6 h-6 text-primary-silver" />
+          <div class="text-center">
+            <div class="font-bold text-gray-900 text-sm">Microsoft Solutions Partner</div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <Award client:load className="w-6 h-6 text-primary-gold" />
+          <div class="text-center">
+            <div class="font-bold text-gray-900 text-sm">7 Especialidades Certificadas</div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <CheckCircle client:load className="w-6 h-6 text-green-500" />
+          <div class="text-center">
+            <div class="font-bold text-gray-900 text-sm">Partner Oficial Verificado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contacto" class="bg-gradient-to-r from-primary-silver to-primary-gold hover:from-primary-gold hover:to-accent-gold-light text-white font-bold py-3 px-6 rounded-full text-base transition-all duration-300 hover:shadow-lg hover:scale-105 inline-flex items-center space-x-2">
+      <span>Consulte Nuestras Soluciones</span>
+      <Award client:load className="w-4 h-4" />
+    </a>
+  </div>
+</section>

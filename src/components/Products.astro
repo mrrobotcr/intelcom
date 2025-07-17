@@ -1,0 +1,152 @@
+---
+import { Briefcase, Cloud, Users, CreditCard, ArrowRight } from 'lucide-react';
+---
+
+<section id="productos" class="py-20 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;100&quot; height=&quot;100&quot; viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23F59E0B&quot; fill-opacity=&quot;0.1&quot;%3E%3Cpolygon points=&quot;50,0 60,40 100,50 60,60 50,100 40,60 0,50 40,40&quot;/%3E%3C/g%3E%3C/svg%3E')\" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-16">
+      <span class="inline-flex items-center px-4 py-2 bg-primary-silver/10 border border-primary-silver/30 rounded-full text-primary-silver text-sm font-semibold mb-4">
+        <Briefcase client:load className="w-4 h-4 mr-2" />
+        Nuestros Productos Estrella
+      </span>
+      <h2 class="font-serif text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        Soluciones <span class="bg-gradient-to-r from-primary-silver to-accent-silver-light bg-clip-text text-transparent">Microsoft</span> de Clase Mundial
+      </h2>
+      <p class="font-sans text-xl text-gray-700 max-w-3xl mx-auto">
+        Implementamos y optimizamos las mejores herramientas de Microsoft para transformar tu empresa
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Microsoft Azure -->
+      <div class="group bg-white border border-gray-100 hover:border-primary-gold/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <Cloud client:load className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Microsoft Azure</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Infraestructura en la nube escalable, segura y confiable para tu empresa.
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Migración a la nube
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Infraestructura como servicio
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Backup y recuperación
+          </li>
+        </ul>
+        <a href="#contacto" class="inline-flex items-center text-primary-silver hover:text-accent-silver-light font-semibold group-hover:translate-x-2 transition-all duration-300">
+          Más información
+          <ArrowRight client:load className="w-4 h-4 ml-2" />
+        </a>
+      </div>
+
+      <!-- Office 365 -->
+      <div class="group bg-white border border-gray-100 hover:border-primary-silver/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Users client:load className="w-8 h-8 text-primary-silver" />
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Office 365</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Suite completa de productividad empresarial en la nube.
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Teams & SharePoint
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Exchange Online
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Power Platform
+          </li>
+        </ul>
+        <a href="#contacto" class="inline-flex items-center text-primary-silver hover:text-accent-silver-light font-bold group-hover:translate-x-2 transition-all duration-300">
+          Más información
+          <ArrowRight client:load className="w-4 h-4 ml-2" />
+        </a>
+      </div>
+
+      <!-- Dynamics CRM -->
+      <div class="group bg-white border border-gray-100 hover:border-primary-silver/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-gold to-accent-gold-light rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+          <Users client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Dynamics CRM</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Gestión inteligente de relaciones con clientes y procesos de ventas.
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Gestión de ventas
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Servicio al cliente
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Marketing automation
+          </li>
+        </ul>
+        <a href="#contacto" class="inline-flex items-center text-primary-silver hover:text-accent-silver-light font-bold group-hover:translate-x-2 transition-all duration-300">
+          Más información
+          <ArrowRight client:load className="w-4 h-4 ml-2" />
+        </a>
+      </div>
+
+      <!-- Licenciamiento -->
+      <div class="group bg-white border border-gray-100 hover:border-primary-silver/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-gradient-silver rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+          <CreditCard client:load className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Licenciamiento</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Optimización de costos y gestión eficiente de licencias Microsoft.
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Auditoría de licencias
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Optimización de costos
+          </li>
+          <li class="text-sm text-gray-700 flex items-center">
+            <span class="w-2 h-2 bg-primary-silver rounded-full mr-3"></span>
+            Compliance y renovaciones
+          </li>
+        </ul>
+        <a href="#contacto" class="inline-flex items-center text-primary-silver hover:text-accent-silver-light font-semibold group-hover:translate-x-2 transition-all duration-300">
+          Más información
+          <ArrowRight client:load className="w-4 h-4 ml-2" />
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <div class="bg-gradient-to-r from-primary-black to-gray-900 rounded-2xl p-8 max-w-4xl mx-auto">
+        <h3 class="font-serif text-2xl font-bold text-white mb-4">¿Necesitas una solución personalizada?</h3>
+        <p class="font-sans text-gray-300 mb-6">Nuestros expertos están listos para diseñar la estrategia perfecta para tu empresa</p>
+        <a href="#contacto" class="bg-gradient-to-r from-primary-silver to-accent-silver-light hover:from-accent-silver-light hover:to-primary-silver text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+          Solicitar Información
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,142 @@
+---
+import { Award, Users, Target, Heart, CheckCircle } from 'lucide-react';
+---
+<section id="why-choose-us" class="py-20 sm:py-24 md:py-32 bg-gradient-to-br from-slate-50 via-white to-gray-50 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;100&quot; height=&quot;100&quot; viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%23F59E0B&quot; fill-opacity=&quot;0.1&quot;%3E%3Cpolygon points=&quot;50,0 60,40 100,50 60,60 50,100 40,60 0,50 40,40&quot;/%3E%3C/g%3E%3C/svg%3E')" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 lg:px-8 relative z-10">
+    <!-- Header Section -->
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center px-4 py-2 bg-primary-gold/10 border border-primary-gold/30 rounded-full text-primary-gold text-sm font-semibold mb-6">
+        <CheckCircle client:load className="w-4 h-4 mr-2" />
+        Ventajas Competitivas
+      </div>
+      <h2 class="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-black mb-6">
+        ¿Por Qué <span class="bg-gradient-to-r from-primary-gold to-amber-500 bg-clip-text text-transparent">Elegirnos?</span>
+      </h2>
+      <p class="font-sans text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Más de dos décadas transformando empresas con tecnología Microsoft de vanguardia
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+      <!-- Feature 1 -->
+      <div class="group bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-gold/50 hover:-translate-y-2 animate-fade-in-up">
+        <div class="flex items-start space-x-6">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+              <Award client:load className="w-8 h-8 text-primary-black" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary-black mb-3 group-hover:text-primary-gold transition-colors duration-300">
+              +20 Años de Experiencia
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Más de dos décadas liderando la transformación digital en Costa Rica, con un historial comprobado de éxito en proyectos complejos.
+            </p>
+            <div class="flex items-center text-sm text-primary-gold font-semibold">
+              <CheckCircle client:load className="w-4 h-4 mr-2" />
+              +500 proyectos exitosos
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="group bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-gold/50 hover:-translate-y-2 animate-fade-in-up animation-delay-100">
+        <div class="flex items-start space-x-6">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+              <Users client:load className="w-8 h-8 text-primary-gold" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary-black mb-3 group-hover:text-primary-gold transition-colors duration-300">
+              Equipo Certificado
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Profesionales altamente cualificados con certificaciones Microsoft actualizadas y experiencia práctica en las últimas tecnologías.
+            </p>
+            <div class="flex items-center text-sm text-primary-gold font-semibold">
+              <CheckCircle client:load className="w-4 h-4 mr-2" />
+              Certificaciones Azure & Office 365
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="group bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-gold/50 hover:-translate-y-2 animate-fade-in-up animation-delay-200">
+        <div class="flex items-start space-x-6">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-gold to-amber-500 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+              <Target client:load className="w-8 h-8 text-primary-black" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary-black mb-3 group-hover:text-primary-gold transition-colors duration-300">
+              Soluciones Personalizadas
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Cada empresa es única. Diseñamos e implementamos soluciones que se adaptan perfectamente a sus necesidades y objetivos específicos.
+            </p>
+            <div class="flex items-center text-sm text-primary-gold font-semibold">
+              <CheckCircle client:load className="w-4 h-4 mr-2" />
+              Análisis profesional incluido
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="group bg-white rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-primary-gold/50 hover:-translate-y-2 animate-fade-in-up animation-delay-300">
+        <div class="flex items-start space-x-6">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 bg-gradient-to-br from-gray-800 to-primary-black rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 animate-floating">
+              <Heart client:load className="w-8 h-8 text-primary-gold" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary-black mb-3 group-hover:text-primary-gold transition-colors duration-300">
+              Compromiso Total
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Su éxito es nuestro éxito. Nos comprometemos a brindar soporte continuo y asegurar que cada proyecto supere sus expectativas.
+            </p>
+            <div class="flex items-center text-sm text-primary-gold font-semibold">
+              <CheckCircle client:load className="w-4 h-4 mr-2" />
+              Soporte 24/7 garantizado
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gradient-to-r from-primary-black to-gray-900 rounded-3xl p-8 lg:p-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl lg:text-5xl font-bold text-primary-gold mb-2">500+</div>
+          <div class="text-gray-300 font-medium">Proyectos Completados</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl lg:text-5xl font-bold text-primary-gold mb-2">20+</div>
+          <div class="text-gray-300 font-medium">Años de Experiencia</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl lg:text-5xl font-bold text-primary-gold mb-2">24/7</div>
+          <div class="text-gray-300 font-medium">Soporte Técnico</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl lg:text-5xl font-bold text-primary-gold mb-2">100%</div>
+          <div class="text-gray-300 font-medium">Satisfacción Cliente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

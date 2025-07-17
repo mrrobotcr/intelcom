@@ -1,0 +1,182 @@
+---
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageSquare, Calendar, Zap } from 'lucide-react';
+---
+<section id="contacto" class="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-slate-50 via-gray-100 to-slate-100 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-20">
+    <div style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;%2371717A&quot; fill-opacity=&quot;0.05&quot;%3E%3Cpolygon points=&quot;20,5 23,15 33,15 25,22 28,32 20,25 12,32 15,22 7,15 17,15&quot;/%3E%3C/g%3E%3C/svg%3E')" class="w-full h-full bg-repeat"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-silver/20 to-primary-gold/20 border border-primary-silver/40 rounded-full text-gray-800 text-sm font-bold mb-8 shadow-lg">
+        <MessageSquare client:load className="w-5 h-5 mr-2 text-primary-gold" />
+        Contacto
+      </div>
+      <h2 class="font-serif font-bold text-3xl sm:text-4xl mb-3 text-gray-900">
+        ¿Listo Para <span class="bg-gradient-to-r from-primary-silver via-gray-700 to-primary-gold bg-clip-text text-transparent">Transformar</span> Su Empresa?
+      </h2>
+      <p class="font-sans text-lg text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+        Conversemos sobre su proyecto. Nuestros expertos están listos para diseñar la solución perfecta
+      </p>
+    </div>
+
+    <!-- Propuesta de Valor Rápida -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="text-center animate-fade-in-up">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-gold to-accent-gold-light rounded-2xl flex items-center justify-center mx-auto mb-4 animate-floating">
+          <Zap client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Respuesta Rápida</h3>
+        <p class="text-gray-600 text-sm">Contacto en menos de 2 horas</p>
+      </div>
+      <div class="text-center animate-fade-in-up animation-delay-200">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-silver to-accent-silver-light rounded-2xl flex items-center justify-center mx-auto mb-4 animate-floating">
+          <Calendar client:load className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Consulta Gratuita</h3>
+        <p class="text-gray-600 text-sm">30 min de asesoría sin costo</p>
+      </div>
+      <div class="text-center animate-fade-in-up animation-delay-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-gold to-accent-gold-light rounded-2xl flex items-center justify-center mx-auto mb-4 animate-floating">
+          <CheckCircle client:load className="w-8 h-8 text-primary-black" />
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Solución Personalizada</h3>
+        <p class="text-gray-600 text-sm">Diseñada para su negocio</p>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <!-- Información de Contacto Compacta -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-primary-gold/50 hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary-gold to-accent-gold-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <Phone client:load className="w-6 h-6 text-primary-black" />
+          </div>
+          <div class="font-semibold text-gray-900 mb-1">Teléfono</div>
+          <div class="text-gray-600 text-sm">+506 2200-0000</div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-primary-gold/50 hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary-silver to-accent-silver-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <Mail client:load className="w-6 h-6 text-white" />
+          </div>
+          <div class="font-semibold text-gray-900 mb-1">Email</div>
+          <div class="text-gray-600 text-sm">info@intelecom.cr</div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-primary-gold/50 hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary-gold to-accent-gold-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <MapPin client:load className="w-6 h-6 text-primary-black" />
+          </div>
+          <div class="font-semibold text-gray-900 mb-1">Ubicación</div>
+          <div class="text-gray-600 text-sm">San José, Costa Rica</div>
+        </div>
+        
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-primary-gold/50 hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-primary-silver to-accent-silver-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <Clock client:load className="w-6 h-6 text-white" />
+          </div>
+          <div class="font-semibold text-gray-900 mb-1">Horarios</div>
+          <div class="text-gray-600 text-sm">Lun - Vie: 8AM - 6PM</div>
+        </div>
+      </div>
+
+      <!-- Formulario de Contacto Mejorado -->
+      <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl">
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Comencemos a Trabajar Juntos</h3>
+          <p class="text-gray-600">Complete el formulario y le contactaremos pronto</p>
+        </div>
+        
+        <form action="#" method="POST" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Nombre Completo *</label>
+              <input 
+                type="text" 
+                name="name" 
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                placeholder="Su nombre completo"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Empresa *</label>
+              <input 
+                type="text" 
+                name="company" 
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                placeholder="Nombre de su empresa"
+              />
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
+              <input 
+                type="email" 
+                name="email" 
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                placeholder="su@empresa.com"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">Teléfono</label>
+              <input 
+                type="tel" 
+                name="phone" 
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                placeholder="+506 0000-0000"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">¿En qué podemos ayudarle? *</label>
+            <select name="service" required class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white">
+              <option value="">Seleccione un servicio</option>
+              <option value="azure">Migración a Azure</option>
+              <option value="office365">Microsoft 365</option>
+              <option value="dynamics">Dynamics 365</option>
+              <option value="security">Ciberseguridad</option>
+              <option value="infrastructure">Infraestructura</option>
+              <option value="managed">Servicios Gestionados</option>
+              <option value="consulting">Consultoría General</option>
+            </select>
+          </div>
+          
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Cuéntenos sobre su proyecto *</label>
+            <textarea 
+              name="message" 
+              rows="4" 
+              required
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-gold focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white resize-none"
+              placeholder="Describa sus necesidades, objetivos, timeline, presupuesto aproximado..."
+            ></textarea>
+          </div>
+          
+          <button 
+            type="submit" 
+            class="w-full bg-gradient-to-r from-primary-silver to-primary-gold hover:from-primary-gold hover:to-accent-gold-light text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center space-x-2"
+          >
+            <span>Solicitar Consulta Gratuita</span>
+            <Send client:load className="w-5 h-5" />
+          </button>
+        </form>
+        
+        <div class="mt-8 p-4 bg-gray-50 rounded-xl">
+          <div class="flex items-center justify-center space-x-2 text-sm text-gray-600">
+            <CheckCircle client:load className="w-4 h-4 text-green-500" />
+            <span>Información 100% confidencial • Respuesta garantizada en 24 horas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
