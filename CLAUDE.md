@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an Astro-based static website for Intelecom, a Costa Rican technology consulting company specializing in Microsoft Azure, Office 365, and Dynamics CRM solutions. The site is built with Astro v5.11.1 and Tailwind CSS, targeting the Spanish-speaking Costa Rican B2B market.
+This is an Astro-based static website for Intelcom, a Costa Rican technology consulting company specializing in Microsoft Azure, Office 365, and Dynamics 365 solutions. The site is built with Astro v5.11.1 and Tailwind CSS, targeting the Spanish-speaking Costa Rican B2B market.
 
 ## Development Commands
 
@@ -51,7 +51,7 @@ Custom Tailwind configuration with business-specific color palette:
 - **B2B Focus**: Technology consulting services for enterprise clients
 - **Conversion Optimization**: Multiple CTAs, contact forms, and trust signals
 - **Spanish Content**: All text content is in Spanish for the Costa Rican market
-- **Service Focus**: Microsoft Azure, Office 365, and Dynamics CRM solutions
+- **Service Focus**: Microsoft Azure, Office 365, and Dynamics 365 solutions
 
 ## Development Patterns
 
