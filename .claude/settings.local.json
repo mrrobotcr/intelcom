@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:itcoint.com)",
+      "Bash(pnpm add:*)"
+    ],
+    "deny": []
+  }
+}
