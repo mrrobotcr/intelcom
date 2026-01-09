@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:itcoint.com)",
-      "Bash(pnpm add:*)"
+      "Bash(pnpm add:*)",
+      "Bash(pnpm remove:*)",
+      "Bash(pnpm build:*)"
     ],
     "deny": []
   }
