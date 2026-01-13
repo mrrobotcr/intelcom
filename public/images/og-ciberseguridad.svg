@@ -1,0 +1,68 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0A"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626"/>
+      <stop offset="100%" style="stop-color:#991B1B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#cyberGradient)"/>
+
+  <!-- Grid Pattern -->
+  <g opacity="0.1">
+    <path d="M0,157 L1200,157" stroke="#DC2626" stroke-width="1"/>
+    <path d="M0,315 L1200,315" stroke="#DC2626" stroke-width="1"/>
+    <path d="M0,472 L1200,472" stroke="#DC2626" stroke-width="1"/>
+    <path d="M300,0 L300,630" stroke="#DC2626" stroke-width="1"/>
+    <path d="M600,0 L600,630" stroke="#DC2626" stroke-width="1"/>
+    <path d="M900,0 L900,630" stroke="#DC2626" stroke-width="1"/>
+  </g>
+
+  <!-- Shield Icon -->
+  <g transform="translate(600, 200)">
+    <path d="M-80,-60 L80,-60 L80,0 C80,60 50,110 0,130 C-50,110 -80,60 -80,0 Z"
+          fill="url(#shieldGradient)"
+          opacity="0.9"/>
+    <path d="M-50,-30 L-20,0 L30,-50 M-20,0 L30,50"
+          stroke="#F59E0B"
+          stroke-width="8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+  </g>
+
+  <!-- Title Text -->
+  <text x="600" y="380"
+        font-family="Montserrat, sans-serif"
+        font-size="56"
+        font-weight="800"
+        fill="#FFFFFF"
+        text-anchor="middle">Ciberseguridad y Hacking Ético</text>
+
+  <!-- Subtitle Text -->
+  <text x="600" y="440"
+        font-family="Montserrat, sans-serif"
+        font-size="36"
+        font-weight="500"
+        fill="#DC2626"
+        text-anchor="middle">Servicios MDR & Pentesting</text>
+
+  <!-- Brand -->
+  <text x="600" y="520"
+        font-family="Inter, sans-serif"
+        font-size="24"
+        font-weight="400"
+        fill="#9CA3AF"
+        text-anchor="middle">Intelcom - Expertos en Seguridad Microsoft</text>
+
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="4" fill="#DC2626" opacity="0.5"/>
+  <circle cx="1100" cy="530" r="4" fill="#DC2626" opacity="0.5"/>
+  <circle cx="150" cy="530" r="3" fill="#F59E0B" opacity="0.5"/>
+  <circle cx="1050" cy="100" r="3" fill="#F59E0B" opacity="0.5"/>
+</svg>

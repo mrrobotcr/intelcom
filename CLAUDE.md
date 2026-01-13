@@ -80,3 +80,39 @@ Custom Tailwind configuration with business-specific color palette:
 - Global styles and custom utilities in `src/styles/global.css`
 - Static assets should go in `public/` directory
 - The site builds to static HTML/CSS/JS for optimal performance and SEO
+
+<!-- BEGIN BRAINGRID INTEGRATION -->
+## BrainGrid Integration
+
+Spec-driven development: turn ideas into AI-ready tasks.
+
+**Slash Commands:**
+
+| Command                     | Description                   |
+| --------------------------- | ----------------------------- |
+| `/specify [prompt]`         | Create AI-refined requirement |
+| `/breakdown [req-id]`       | Break into tasks              |
+| `/build [req-id]`           | Get implementation plan       |
+| `/save-requirement [title]` | Save plan as requirement      |
+
+**Workflow:**
+
+```bash
+/specify "Add auth"  # → REQ-123
+/breakdown REQ-123   # → tasks
+/build REQ-123       # → plan
+```
+
+**Task Commands:**
+
+```bash
+braingrid task list -r REQ-123      # List tasks
+braingrid task show TASK-456        # Show task details
+braingrid task update TASK-456 --status COMPLETED
+```
+
+**Auto-detection:** Project from `.braingrid/project.json`, requirement from branch (`feature/REQ-123-*`).
+
+**Full documentation:** [.braingrid/README.md](./.braingrid/README.md)
+
+<!-- END BRAINGRID INTEGRATION -->
