@@ -8,9 +8,22 @@ import TransformationTimeline from '../components/cyber/TransformationTimeline.a
 import CyberServices from '../components/cyber/CyberServices.astro';
 import Methodology from '../components/cyber/Methodology.astro';
 import CyberContact from '../components/cyber/CyberContact.astro';
+
+// Page-specific SEO metadata
+const seo = {
+	title: 'Ciberseguridad en Costa Rica | Intelcom - Protección Proactiva para su Negocio',
+	description: 'Servicios profesionales de ciberseguridad en Costa Rica. Protección avanzada contra amenazas, detección de intrusiones, respuesta a incidentes y cumplimiento de normativas. Microsoft Solutions Partner.',
+	image: '/images/og-ciberseguridad.jpg',
+	type: 'website' as const
+};
 ---
 
-<Layout title="Ciberseguridad - Intelcom | Protección Proactiva para tu Negocio">
+<Layout
+	title={seo.title}
+	description={seo.description}
+	image={seo.image}
+	type={seo.type}
+>
 	<CyberHero />
 	<ThreatKillChain />
 	<BusinessApproach />
