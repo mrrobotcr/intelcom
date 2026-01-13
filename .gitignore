@@ -23,3 +23,9 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 .vercel
+
+# local claude code configuration
+.claude/
+
+# braingrid local development
+.braingrid/
