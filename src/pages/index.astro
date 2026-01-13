@@ -11,9 +11,22 @@ import Testimonials from '../components/Testimonials.astro';
 import AboutUs from '../components/AboutUs.astro';
 import ContactForm from '../components/ContactForm.astro';
 import Footer from '../components/Footer.astro';
+
+// Page-specific SEO metadata
+const seo = {
+	title: 'Intelcom - Consultoría Microsoft Azure & Office 365 en Costa Rica | Microsoft Solutions Partner',
+	description: 'Transforme su negocio con Intelcom, Microsoft Solutions Partner certificado en Costa Rica. Expertos en migración Azure, Office 365, Dynamics 365, ciberseguridad y nube. Consultoría especializada disponible.',
+	image: '/images/og-home.jpg',
+	type: 'website' as const
+};
 ---
 
-<Layout>
+<Layout
+	title={seo.title}
+	description={seo.description}
+	image={seo.image}
+	type={seo.type}
+>
 	<Hero />
 	<Products />
 	<Certifications />
