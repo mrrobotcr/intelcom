@@ -1,6 +1,12 @@
 ---
 import Header from '../components/Header.astro';
 import '../styles/global.css';
+
+interface Props {
+	title?: string;
+}
+
+const { title = 'Intelcom - Consultoría Microsoft Azure & Office 365 en Costa Rica' } = Astro.props;
 ---
 <!doctype html>
 <html lang="es">
@@ -8,9 +14,9 @@ import '../styles/global.css';
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		
+
 		<!-- Primary Meta Tags -->
-		<title>Intelcom - Consultoría Microsoft Azure & Office 365 en Costa Rica</title>
+		<title>{title}</title>
 		<meta name="title" content="Intelcom - Consultoría Microsoft Azure & Office 365 en Costa Rica" />
 		<meta name="description" content="Somos Microsoft Solutions Partner certificado en Costa Rica. Especialistas en migración Azure, Office 365, Dynamics 365, ciberseguridad e infraestructura en la nube. Consultoría especializada disponible." />
 		<meta name="keywords" content="Microsoft Azure Costa Rica, Office 365 Costa Rica, Dynamics 365, consultoría Microsoft, migración nube, ciberseguridad, infraestructura cloud, Microsoft Solutions Partner" />
