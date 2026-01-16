@@ -32,3 +32,6 @@ pnpm-debug.log*
 
 # Auto Claude data directory
 .auto-claude/
+.auto-claude-status
+*.auto-claude*
+.auto-claude-status
