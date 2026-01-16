@@ -1,16 +1,16 @@
 {
   "active": true,
-  "spec": "003-actualizacion-para-usar-pnpm-en-lugar-de-npm",
-  "state": "completed",
+  "spec": "001-fix-anchor-link-scroll-offset-for-fixed-header",
+  "state": "planning",
   "subtasks": {
-    "completed": 1,
-    "total": 1,
-    "in_progress": 0,
+    "completed": 0,
+    "total": 0,
+    "in_progress": 1,
     "failed": 0
   },
   "phase": {
-    "current": "Verification",
-    "id": 1,
+    "current": "CSS Scroll Padding Fix",
+    "id": null,
     "total": 1
   },
   "workers": {
@@ -18,8 +18,8 @@
     "max": 1
   },
   "session": {
-    "number": 1,
-    "started_at": "2026-01-16T13:38:57.868444"
+    "number": 3,
+    "started_at": "2026-01-16T13:55:33.510628"
   },
-  "last_update": "2026-01-16T13:45:00.000000"
+  "last_update": "2026-01-16T14:03:13.704918"
 }
