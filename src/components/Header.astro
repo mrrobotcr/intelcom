@@ -85,6 +85,13 @@
   const closeMenuBtn = document.getElementById('close-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
+  // Get all focusable elements within the mobile menu
+  function getFocusableElements() {
+    return mobileMenu.querySelectorAll(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+  }
+
   function closeMenu() {
     mobileMenu.classList.add('hidden');
     menuBtn.setAttribute('aria-expanded', 'false');
@@ -92,12 +99,26 @@
     menuBtn.focus();
   }
 
+  function openMenu() {
+    mobileMenu.classList.remove('hidden');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    menuBtn.setAttribute('aria-label', 'Cerrar menú');
+
+    // Set focus to the first focusable element after menu opens
+    const focusableElements = getFocusableElements();
+    if (focusableElements.length > 0) {
+      focusableElements[0].focus();
+    }
+  }
+
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', function() {
       const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-      mobileMenu.classList.toggle('hidden');
-      menuBtn.setAttribute('aria-expanded', !isExpanded);
-      menuBtn.setAttribute('aria-label', !isExpanded ? 'Cerrar menú' : 'Abrir menú');
+      if (isExpanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
   }
 
@@ -105,10 +126,42 @@
     closeMenuBtn.addEventListener('click', closeMenu);
   }
 
-  // Close menu on Escape key press
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+  // Close menu on Escape key press and implement focus trap
+  mobileMenu.addEventListener('keydown', function(event) {
+    // Close menu on Escape
+    if (event.key === 'Escape') {
       closeMenu();
+      return;
     }
+
+    // Implement focus trap for Tab and Shift+Tab
+    if (event.key === 'Tab') {
+      const focusableElements = getFocusableElements();
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      const activeElement = document.activeElement;
+
+      // If Shift+Tab on first element, move to last element
+      if (event.shiftKey && activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      }
+      // If Tab on last element, move to first element
+      else if (!event.shiftKey && activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+  });
+
+  // Close menu when a menu link is clicked and return focus to menu button
+  const menuLinks = mobileMenu.querySelectorAll('a[href]');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Small delay to allow navigation to start
+      setTimeout(() => {
+        closeMenu();
+      }, 100);
+    });
   });
 </script>
