@@ -42,7 +42,13 @@
       </nav>
       
       <div class="lg:hidden">
-        <button id="menu-btn" class="text-neutral-white hover:text-primary-silver focus:outline-none transition-colors duration-300">
+        <button
+          id="menu-btn"
+          class="text-neutral-white hover:text-primary-silver focus:outline-none transition-colors duration-300"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+          aria-controls="mobile-menu"
+        >
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
@@ -69,7 +75,10 @@
 
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', function() {
+      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
       mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      menuBtn.setAttribute('aria-label', !isExpanded ? 'Cerrar menú' : 'Abrir menú');
     });
   }
 </script>
