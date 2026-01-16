@@ -1,25 +1,25 @@
 {
   "active": true,
-  "spec": "002-mobile-menu-accessibility-enhancement",
-  "state": "building",
+  "spec": "003-actualizacion-para-usar-pnpm-en-lugar-de-npm",
+  "state": "completed",
   "subtasks": {
-    "completed": 6,
-    "total": 7,
-    "in_progress": 1,
+    "completed": 1,
+    "total": 1,
+    "in_progress": 0,
     "failed": 0
   },
   "phase": {
-    "current": "Accessibility Implementation",
-    "id": null,
-    "total": 7
+    "current": "Verification",
+    "id": 1,
+    "total": 1
   },
   "workers": {
     "active": 0,
     "max": 1
   },
   "session": {
-    "number": 8,
-    "started_at": "2026-01-16T12:52:17.668358"
+    "number": 1,
+    "started_at": "2026-01-16T13:38:57.868444"
   },
-  "last_update": "2026-01-16T13:06:50.317422"
+  "last_update": "2026-01-16T13:45:00.000000"
 }
