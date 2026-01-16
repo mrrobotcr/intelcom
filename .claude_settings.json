@@ -1,0 +1,39 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Read(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/**)",
+      "Write(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/**)",
+      "Edit(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/**)",
+      "Glob(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/**)",
+      "Grep(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/**)",
+      "Read(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/.auto-claude/specs/002-mobile-menu-accessibility-enhancement/**)",
+      "Write(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/.auto-claude/specs/002-mobile-menu-accessibility-enhancement/**)",
+      "Edit(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/worktrees/tasks/002-mobile-menu-accessibility-enhancement/.auto-claude/specs/002-mobile-menu-accessibility-enhancement/**)",
+      "Read(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/**)",
+      "Write(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/**)",
+      "Edit(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/**)",
+      "Glob(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/**)",
+      "Grep(/Users/johelcastillo/Documents/ITCO/intelcom/.auto-claude/**)",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "mcp__context7__resolve-library-id(*)",
+      "mcp__context7__get-library-docs(*)",
+      "mcp__graphiti-memory__search_nodes(*)",
+      "mcp__graphiti-memory__search_facts(*)",
+      "mcp__graphiti-memory__add_episode(*)",
+      "mcp__graphiti-memory__get_episodes(*)",
+      "mcp__graphiti-memory__get_entity_edge(*)"
+    ]
+  }
+}

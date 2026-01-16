@@ -29,3 +29,6 @@ pnpm-debug.log*
 
 # braingrid local development
 .braingrid/
+
+# Auto Claude data directory
+.auto-claude/
